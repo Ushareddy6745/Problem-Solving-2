@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+ //1.Movie Ticket Booking System
+
+// Problem: Create a program for booking movie tickets where a user chooses a movie and seat category. The options should be:
+
+// Movie:
+
+// Action: Standard Seat - 10rs, VIP Seat - 20rs
+
+// Comedy: Standard Seat - 8rs, VIP Seat - 15rs
+
+// Drama: Standard Seat -6rs, VIP Seat - 12rs
+
+        let movie = prompt("select the movie name: ")
+        let seat = prompt("Select the seat category: ")
+
+        switch (movie) {
+            case "Action":
+                switch (seat) {
+                    case "Standard":
+                        console.log(`Ticket price of the movie  ${movie} for seat ${seat} is: Rs.10`)
+                        break;
+                    case "VIP":
+                        console.log(`Ticket price of the movie  ${movie} for seat ${seat} is: Rs.20`)
+                        break;
+         default:
+         console.log("Invalid movie name")
+         break;
+                }
+                break;
+            case "Comedy":
+                switch (seat) {
+                    case "Standard":
+                        console.log(`Ticket price of the movie  ${movie} for seat ${seat} is: Rs.8`)
+                        break;
+                    case "VIP":
+                        console.log(`Ticket price of the movie  ${movie} for seat ${seat} is: Rs.15`)
+                        break;
+        default:
+        console.log("Invalid movie name")
+        break;
+                }
+                break;
+            case "Drama":
+                switch (seat) {
+                    case "Standard":
+                        console.log(`Ticket price of the movie  ${movie} for seat ${seat} is: Rs.6`)
+                        break;
+                    case "VIP":
+                        console.log(`Ticket price of the movie  ${movie} for seat ${seat} is: Rs12`)
+                        break;
+           default:
+            console.log("Invalid movie name")
+            break;
+                }
+           break;
+              
+        }
+
+ //2.: Design a program that calculates discounts based on product categories (Electronics, Clothing, Grocery). Each category has specific discount rates for different products:
+
+// Electronics: Mobile - 5%, Laptop - 10%
+
+// Clothing: Men - 15%, Women - 20%
+
+// Grocery: Fruits - 5%, Vegetables - 10%
+
+
+        let category=prompt("Select a Category: ")
+        let product=prompt("Select the product: ")
+
+        switch(category){
+            case "Electronics":
+                switch(product){
+                    case "Mobile":
+                        console.log("Discount on the product is:5%")
+                        break;
+                        case "Laptop":
+                        console.log("Discount on the product is:10%")   
+                        break;
+                        default:
+                        console.log("Invalid")
+                        break;
+                }
+                break;
+                case "Clothing":
+                    switch(product){
+                        case "Men":
+                            console.log("Discount on the product is:15%")
+                            break;
+                            case "Women":
+                                console.log("Discount on the product is:20%")
+                                break;
+                                default:
+                        console.log("Invalid")
+                        break;
+                    }
+                    break;
+                    case "Grocery":
+                        switch(product){
+                            case "Fruits":
+                                console.log("Discount on the product is:5%")
+                                break;
+                                case "Vegetables":
+                                    console.log("Discount on the product is:10%")
+                                    break;
+                     default:
+                        console.log("Invalid")
+                        break;
+                        }
+                        break;
+        }
+
+         //3.Write a travel booking system that allows a user to select a mode of transport (Flight, Train, Bus) and then choose a class or category:
+
+         // Flight: Economy, Business
+
+         // Train: Sleeper, AC Class
+
+        // Bus: Standard, Luxury
+
+        let trans = prompt("Select the Mode of Transport: ")
+        let cls = prompt("Select the Category: ")
+        switch (trans) {
+            case "Flight":
+                switch (cls) {
+                    case "Economy":
+                        console.log(`Your flight ticket has been booked in the category ${cls}`)
+                        break;
+                    case "Business":
+                        console.log(`Your flight ticket has been booked in the category ${cls}`)
+                        break;
+                    default:
+                        console.log("Invalid")
+                        break;
+                }
+                break;
+            case "Train":
+                switch (cls) {
+                    case "Sleeper":
+                        console.log(`Your train ticket has been booked in the category ${cls}`)
+                        break;
+                    case "AC":
+                        console.log(`Your train ticket has been booked in the category ${cls}`)
+                        break;
+                    default:
+                        console.log("Invalid")
+                }
+                break;
+            case "Bus":
+                switch (cls) {
+                    case "Standard":
+                        console.log(`Your bus ticket has been booked in the category ${cls}`)
+                        break;
+                    case "Luxury":
+                        console.log(`Your bus ticket has been booked in the category ${cls}`)
+                        break;
+                    default:
+                        console.log("Invalid")
+                        break;
+                }
+                break;
+        }
+
+
+
+
+</script>
+</body>
+
+</html>
